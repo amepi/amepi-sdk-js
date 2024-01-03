@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - Read this repository [wiki]()
-- [Deno](https://deno.com/) (^1.38.5)
+- [Deno](https://deno.com/) (^1.39.1)
 - [Visual Studio Code](https://code.visualstudio.com/)
   - [Deno extension](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 
