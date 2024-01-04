@@ -31,3 +31,11 @@ publish, you can use dnt to export it to Node.js/npm-compatible format.
 
 See
 [Cross-runtime modules with dnt](https://docs.deno.com/runtime/manual/advanced/publishing/dnt)
+
+## Conventions
+
+### Git
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+### JavaScript
+
+- [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
