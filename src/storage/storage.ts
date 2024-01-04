@@ -2,16 +2,21 @@
 // @see https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/javascript_s3_code_examples.html
 
 /**
- * AWS S3
- * 
+ * Storage operations (e.g. upload/get object...)
+ * Built on AWS S3 SDK
  */
 export class Storage {
-  constructor() {
-  }
+  constructor() {}
 
   // listBuckets(){}
   // listBucketObjects(command: ListObjectsV2Command){}
-  getObject() {}
+  /**
+ * Get an object from storage
+ * @param {number} x
+ * @param {number} y
+ * @returns {number} Sum of x and y
+ */
+  // getObject(command: PutObjectCommand) {}
   // uploadObject(command: PutObjectCommand){
   //   try {
   //     const response = await client.send(command);
