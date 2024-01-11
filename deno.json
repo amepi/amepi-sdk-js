@@ -6,33 +6,8 @@
     "coverage": "deno coverage",
     "coverage:html": "deno coverage --html",
     "doc:html": "deno doc --html",
-    
-    "esm:add": "deno run -A https://esm.sh/v135 add",
-    "esm:update": "deno run -A https://esm.sh/v135 update",
-    "esm:remove": "deno run -A https://esm.sh/v135 remove"
-  },
-  "imports": {
-    "drizzle-kit": "https://esm.sh/v135/*drizzle-kit@0.20.4",
-    "drizzle-kit/": "https://esm.sh/v135/*drizzle-kit@0.20.4/",
-    "drizzleOrm": "https://esm.sh/v135/*drizzle-orm@0.29.0",
-    "drizzle-orm/": "https://esm.sh/v135/*drizzle-orm@0.29.0/",
-    "postgres": "https://esm.sh/v135/postgres@3.4.3"
-  },
-  "scopes": {
-    "https://esm.sh/v135/": {
-      "@drizzle-team/studio": "https://esm.sh/v135/@drizzle-team/studio@0.0.27",
-      "@esbuild-kit/esm-loader": "https://esm.sh/v135/@esbuild-kit/esm-loader@2.6.5",
-      "camelcase": "https://esm.sh/v135/camelcase@7.0.1",
-      "chalk": "https://esm.sh/v135/chalk@5.3.0",
-      "commander": "https://esm.sh/v135/commander@9.5.0",
-      "esbuild-register": "https://esm.sh/v135/esbuild-register@3.5.0",
-      "esbuild": "https://esm.sh/v135/esbuild@0.18.20",
-      "glob": "https://esm.sh/v135/glob@8.1.0",
-      "hanji": "https://esm.sh/v135/hanji@0.0.5",
-      "json-diff": "https://esm.sh/v135/json-diff@0.9.0",
-      "minimatch": "https://esm.sh/v135/minimatch@7.4.6",
-      "wrangler": "https://esm.sh/v135/wrangler@3.17.0",
-      "zod": "https://esm.sh/v135/zod@3.22.4"
-    }
+    "cache:reload": "deno cache --reload --lock=deno.lock --lock-write deps.ts",
+    "prisma:introspect": "deno run -A npm:prisma db pull",
+    "prisma:client": "deno run -A --unstable npm:prisma generate"
   }
 }

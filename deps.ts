@@ -1,8 +1,9 @@
-/**
- * deps.ts
+/** deps.ts pattern
+ *
+ * All required remote dependencies are referenced in this file
+ * and the required methods and classes are re-exported.
+ *
+ * @see https://docs.deno.com/runtime/tutorials/manage_dependencies
  */
-export * from "https://esm.sh/v134/*drizzle-orm@0.29.0";
 
-// "drizzle-orm": "https://esm.sh/v134/*drizzle-orm@0.29.0",
-//     "drizzle-orm/": "https://esm.sh/v134/*drizzle-orm@0.29.0/",
-//     "postgres": "https://esm.sh/v134/postgres@3.4.3"
+export { load } from "https://deno.land/std@0.211.0/dotenv/mod.ts";

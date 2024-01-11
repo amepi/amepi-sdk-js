@@ -1,5 +1,6 @@
 /** Version of the Amepi SDK modules
- * It is still unstable
+ *
+ * Unstable
  */
 
 export const VERSION = "0.1.0";

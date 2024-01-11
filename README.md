@@ -6,9 +6,10 @@ JavaScript SDK for Amepi softwares.
 
 - It works in node.js (AWS Lambda), deno and web browsers (Google Chrome)
 - Zero dependencies
-- Drizzle ORM:
+- [Prisma](https://www.prisma.io/)
+<!-- - Drizzle ORM:
   - Database schema and migrations
-  - Zod schema generation and validation
+  - Zod schema generation and validation -->
 
 ## Contributing
 
