@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run -A --unstable-hmr mod.ts",
+    "dev": "deno run -A --unstable-hmr main.ts",
     "test": "deno test",
     "coverage:collect": "deno test --coverage",
     "coverage": "deno coverage",
@@ -10,6 +10,9 @@
     "dnt": "deno run -A scripts/build_npm.ts",
     "prisma:introspect": "deno run -A npm:prisma db pull",
     "prisma:client": "deno run -A --unstable npm:prisma generate",
+    "bws:secrets": "bws secret list",
+    "dnt:clear": "rm -rf npm", // clear dnt output directory,
+    "env:setup": "cp .env.example .env && code .env",
     "publish:npm": "npm publish /npm",
     "publish:github": "echo wip"
   }

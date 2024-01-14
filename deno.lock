@@ -2,12 +2,39 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "npm:@bitwarden/sdk-napi": "npm:@bitwarden/sdk-napi@0.3.1",
+      "npm:@bitwarden/sdk-napi@^0.3.1": "npm:@bitwarden/sdk-napi@0.3.1",
       "npm:@types/node": "npm:@types/node@18.16.19",
       "npm:drizzle-orm": "npm:drizzle-orm@0.29.0",
       "npm:prisma": "npm:prisma@5.7.0",
       "npm:prisma@^5.7.0": "npm:prisma@5.7.0"
     },
     "npm": {
+      "@bitwarden/sdk-napi-darwin-arm64@0.3.1": {
+        "integrity": "sha512-kfQ6uEJOEO9x8sPHk+qysJGYvBfc9XIHLSTNMp8axkRpuVOkc+uq7IC2fvViUDNJXGRjdepvuC5blp75oT6BMA==",
+        "dependencies": {}
+      },
+      "@bitwarden/sdk-napi-darwin-x64@0.3.1": {
+        "integrity": "sha512-mV4DLakyQ4hhM3HI0jeZ55y62UnrDccj6qX7Z5ygItx/Q9w0mEn0TQLZiwcm/uqtOYWBsDr3Bg9QyyiOfCCT1g==",
+        "dependencies": {}
+      },
+      "@bitwarden/sdk-napi-linux-x64-gnu@0.3.1": {
+        "integrity": "sha512-NkS09B0P55zWy6YAyFKJ1MytJWyUgAUFCNgFCf6wx7L2W9uplKfunWaY4NhElAhn4pXX1aElNN1+T2OECUTykg==",
+        "dependencies": {}
+      },
+      "@bitwarden/sdk-napi-win32-x64-msvc@0.3.1": {
+        "integrity": "sha512-C70Y4skSbPcKxAVb3zUS++TmtHU8Wz5FCx+kdJvq1VWPAokuOG5OjlqiK06tY+zaiCIgNBAvjxfHCq1774N30w==",
+        "dependencies": {}
+      },
+      "@bitwarden/sdk-napi@0.3.1": {
+        "integrity": "sha512-G5oM/st2+1eQOposoxdgLqK52j52fkcjv6W3OiojBx/yHy854FnY5KfKZRf73DRV/U1AYnHWckHE4IQ53/u3CQ==",
+        "dependencies": {
+          "@bitwarden/sdk-napi-darwin-arm64": "@bitwarden/sdk-napi-darwin-arm64@0.3.1",
+          "@bitwarden/sdk-napi-darwin-x64": "@bitwarden/sdk-napi-darwin-x64@0.3.1",
+          "@bitwarden/sdk-napi-linux-x64-gnu": "@bitwarden/sdk-napi-linux-x64-gnu@0.3.1",
+          "@bitwarden/sdk-napi-win32-x64-msvc": "@bitwarden/sdk-napi-win32-x64-msvc@0.3.1"
+        }
+      },
       "@prisma/debug@5.7.0": {
         "integrity": "sha512-tZ+MOjWlVvz1kOEhNYMa4QUGURY+kgOUBqLHYIV8jmCsMuvA1tWcn7qtIMLzYWCbDcQT4ZS8xDgK0R2gl6/0wA==",
         "dependencies": {}

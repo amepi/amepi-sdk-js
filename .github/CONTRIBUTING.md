@@ -29,19 +29,16 @@
 
 Copy and paste/rename the [.env.example](../.env.example) file to
 [.env](https://docs.deno.com/runtime/manual/basics/env_variables#env-file) in
-the root of the project.
+the root of the project by running this command :
 
 ```Shell
-# Bash
-cp .env.example .env
-```
-
-```Powershell
-# Powershell
-Copy-Item .\.env.example .\.env
+deno task env:setup
 ```
 
 #### Secret Manager
+
+Bitwarden Secret Manager CLI is used for reading and injecting secrets into the
+application.
 
 ### Debugging
 

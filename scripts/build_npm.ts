@@ -1,10 +1,10 @@
-// ex. scripts/build_npm.ts
+// Deno to npm package build tool
 import { build, emptyDir } from "../dev_deps.ts";
 
 await emptyDir("./npm");
 
 await build({
-  entryPoints: ["./mod.ts"],
+  entryPoints: ["./main.ts"],
   outDir: "./npm",
   shims: {
     // see JS docs for overview and more options
