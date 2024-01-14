@@ -12,9 +12,11 @@
   //   "editor.defaultFormatter": "vscode.json-language-features"
   // },
   // "[typescript]": {
-  //   "editor.defaultFormatter": "denoland.vscode-deno"
+  //   "editor.defaultFormatter": "denoland.vscode-deno",
+  //   "editor.formatOnSave": true
   // },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   }
+  // "editor.stickyScroll.scrollWithEditor": true
 }

@@ -5,3 +5,6 @@
  *
  * @see https://docs.deno.com/runtime/tutorials/manage_dependencies
  */
+
+export { assertEquals } from "https://deno.land/std@0.211.0/assert/mod.ts";
+export { build, emptyDir } from "https://deno.land/x/dnt@0.39.0/mod.ts";

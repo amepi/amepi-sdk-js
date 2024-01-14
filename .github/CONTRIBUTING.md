@@ -1,10 +1,13 @@
 # Contributing
 
+[!NOTE] Project structure is inspired by
+[Deno Standard Library](https://github.com/denoland/deno_std).
+
 ## Prerequisites
 
 <!-- - Read this repository [wiki]() -->
 
-- [Deno](https://deno.com/) (^1.39.2)
+- [Deno](https://deno.com/) (^1.39.3)
 - [Visual Studio Code](https://code.visualstudio.com/)
   - [Install](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-an-extension)
     and
@@ -12,15 +15,15 @@
     [workspace recommended extensions](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions):
     - See the list of recommended extensions using
       [**Show Recommended Extensions**](https://code.visualstudio.com/docs/editor/extension-marketplace#_recommended-extensions)
-    - Recommended extensions can also be found in the
-      [.vscode/extensions.json](../.vscode/extensions.json) file
+      - Recommended extensions can also be found in the
+        [.vscode/extensions.json](../.vscode/extensions.json) file
 
 ### Optional
 
 - [GitHub CLI](https://cli.github.com/)
 - [Bitwarden Secrets Manager CLI](https://bitwarden.com/help/secrets-manager-cli/)
 
-## Setup
+## Getting started
 
 ### Environment variables
 
@@ -107,4 +110,4 @@ See
 
 ### Package Versioning
 
-- [Semantic Versioning 2.0.0](https://semver.org/)
+- [Semantic Versioning](https://semver.org/)

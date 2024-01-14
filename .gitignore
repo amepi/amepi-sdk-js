@@ -133,3 +133,6 @@ dist
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+
+# dnt build output
+npm

@@ -1,7 +1,10 @@
-import { load } from "./deps.ts";
+// import { load } from "./deps.ts";
 // import { PrismaClient } from "./generated/client/deno/edge.ts";
 
-const env = await load();
+// const env = await load();
+// const password = env["PASSWORD"];
+// console.log(password);
+
 // const prisma = new PrismaClient();
 
 // async function main() {
@@ -21,11 +24,15 @@ const env = await load();
 //     // process.exit(1);
 //   });
 
+export * from "./src/storage/mod.ts";
+// export * from "./src/media/mod.ts";
+// export * from "./src/notifications/email/mod.ts";
+
 export function add(a: number, b: number): number {
   return a + b;
 }
 // https://docs.deno.com/runtime/tutorials/manage_dependencies
 // Learn more at https://deno.land/manual/examples/module_metadata#concepts
-if (import.meta.main) {
-  console.log("Add 2 + 3 =", add(2, 3));
-}
+// if (import.meta.main) {
+//   console.log("Add 2 + 3 =", add(2, 3));
+// }

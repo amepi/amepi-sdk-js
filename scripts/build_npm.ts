@@ -1,5 +1,5 @@
 // ex. scripts/build_npm.ts
-import { build, emptyDir } from "https://deno.land/x/dnt/mod.ts";
+import { build, emptyDir } from "../dev_deps.ts";
 
 await emptyDir("./npm");
 
@@ -26,8 +26,9 @@ await build({
   },
   postBuild() {
     // steps to run after building and before running the tests
-    Deno.copyFileSync("LICENSE", "npm/LICENSE");
+    // Deno.copyFileSync("LICENSE", "npm/LICENSE");
     Deno.copyFileSync("README.md", "npm/README.md");
-    Deno.copyFileSync("CONTRIBUTING.md", "npm/CONTRIBUTING.md");
+    // Deno.copyFileSync("CONTRIBUTING.md", "npm/CONTRIBUTING.md");
+    // @todo automatically publish to npm registry ?
   },
 });

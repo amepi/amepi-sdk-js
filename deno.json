@@ -1,13 +1,16 @@
 {
   "tasks": {
-    "dev": "deno run -A --unstable-hmr main.ts",
+    "dev": "deno run -A --unstable-hmr mod.ts",
     "test": "deno test",
     "coverage:collect": "deno test --coverage",
     "coverage": "deno coverage",
     "coverage:html": "deno coverage --html",
     "doc:html": "deno doc --html",
     "cache:reload": "deno cache --reload --lock=deno.lock --lock-write deps.ts",
+    "dnt": "deno run -A scripts/build_npm.ts",
     "prisma:introspect": "deno run -A npm:prisma db pull",
-    "prisma:client": "deno run -A --unstable npm:prisma generate"
+    "prisma:client": "deno run -A --unstable npm:prisma generate",
+    "publish:npm": "npm publish /npm",
+    "publish:github": "echo wip"
   }
 }
