@@ -1,32 +1,8 @@
 import { load } from "./deps.ts";
 // import { PrismaClient } from "./generated/client/deno/edge.ts";
-import { BitwardenClient } from "./dev_deps.ts";
 
 const env = await load();
 console.log(env);
-
-const client = new BitwardenClient();
-
-for (const key in env) {
-  if (Object.prototype.hasOwnProperty.call(env, key)) {
-    console.log(key, env[key]);
-    if (key === "BWS_ACCESS_TOKEN") {
-      const result = client.loginWithAccessToken(
-        env[key],
-      ).then((res) => {
-        console.log("response result", res.success);
-      }).catch((err) => {
-        console.error(err);
-      });
-      console.log("result", result);
-      // if (!result.success) {
-      //   throw Error("Authentication failed");
-      // }
-
-      console.log(result);
-    }
-  }
-}
 
 // const prisma = new PrismaClient();
 

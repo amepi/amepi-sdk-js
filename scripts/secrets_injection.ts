@@ -8,6 +8,8 @@ export class SecretsManager {
     // Bitwarden client is configurable (loglevel...)
     // @see https://github.com/bitwarden/sdk/tree/main/crates/bitwarden-napi#getting-started
     this.client = new BitwardenClient();
+    // @todo setup client authentication
+    // this.client.loginWithAccessToken(accessToken);
   }
   /**
    * Replace secrets ID in .env file by secrets value
