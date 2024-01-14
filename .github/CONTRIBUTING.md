@@ -8,6 +8,8 @@
 <!-- - Read this repository [wiki]() -->
 
 - [Deno](https://deno.com/) (^1.39.3)
+- [Node](https://nodejs.org/) (^20.11.0)
+  - Used by some deno tasks commands (e.g. Prisma commands)
 - [Visual Studio Code](https://code.visualstudio.com/)
   - [Install](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-an-extension)
     and
@@ -49,12 +51,23 @@ See
 
 ### Managing dependencies
 
+Remote dependencies are managed in [deps.ts](../deps.ts) and [dev_deps.ts](../dev_deps.ts) files.
+
 See
 ["Managing Dependencies"](https://docs.deno.com/runtime/tutorials/manage_dependencies)
 
 ### Testing
 
+```Shell
+# run all test
+deno task test
+```
+
 See ["Testing in Deno"](https://docs.deno.com/runtime/manual/basics/testing/)
+
+#### Coverage
+
+See ["Test Coverage"](https://docs.deno.com/runtime/manual/basics/testing/coverage)
 
 ### Prisma
 

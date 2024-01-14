@@ -1,27 +1,27 @@
 import { load } from "./deps.ts";
-// import { PrismaClient } from "./generated/client/deno/edge.ts";
-
+import { PrismaClient } from "./generated/client/deno/edge.ts";
 const env = await load();
 console.log(env);
+Deno.env.set('DATABASE_URL', 'test')
+const prisma = new PrismaClient();
 
-// const prisma = new PrismaClient();
+async function main() {
+  prisma.$connect()
+  // ... you will write your Prisma Client queries here
+  const allUsers = await prisma.agency.findFirst();
+  console.log(allUsers);
+}
 
-// async function main() {
-//   // ... you will write your Prisma Client queries here
-//   const allUsers = await prisma.agency.findFirst();
-//   console.log(allUsers);
-// }
-
-// main()
-//   .then(async () => {
-//     await prisma.$disconnect();
-//   })
-//   .catch(async (e) => {
-//     console.error(e);
-//     await prisma.$disconnect();
-//     return false;
-//     // process.exit(1);
-//   });
+main()
+  .then(async () => {
+    await prisma.$disconnect();
+  })
+  .catch(async (e) => {
+    console.error(e);
+    await prisma.$disconnect();
+    return false;
+    // process.exit(1);
+  });
 
 export * from "./src/storage/mod.ts";
 // export * from "./src/media/mod.ts";

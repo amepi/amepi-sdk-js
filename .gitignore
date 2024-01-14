@@ -136,3 +136,9 @@ dist
 
 # dnt build output
 npm
+
+# prisma client generated ouput
+generated
+
+# deno coverage ouput directory
+coverage
