@@ -1,12 +1,18 @@
+/**
+ * @todo implement custom exception class
+ * @see https://github.com/honojs/hono/blob/main/src/http-exception.ts
+ * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
+ */
 import { load } from "./deps.ts";
 import { PrismaClient } from "./generated/client/deno/edge.ts";
 const env = await load();
 console.log(env);
-Deno.env.set('DATABASE_URL', 'test')
+
+Deno.env.set("DATABASE_URL", "test");
 const prisma = new PrismaClient();
 
 async function main() {
-  prisma.$connect()
+  prisma.$connect();
   // ... you will write your Prisma Client queries here
   const allUsers = await prisma.agency.findFirst();
   console.log(allUsers);
